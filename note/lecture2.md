@@ -25,3 +25,46 @@ Dependencies
  in the App.tsx  the router part is important.
 
 Home and Profileare showing after  Layout
+
+Using router in the app 
+-
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <Layout />,
+    children: [
+      {
+        path:"",
+        element: <Home/>,
+      },
+      {
+        path:"profile",
+        element: <Profile/>,
+      }
+    ]
+  },
+  {
+    path:"/login",
+    element: <Login />,
+  },
+  {
+    path:"/createAccount",
+    element: <CreateAccount />,
+  },
+])
+
+
+
+in the app.ts
+
+
+function App() {
+   const [count, setCount] = useState(0)
+
+  return <>
+  <GlobalStyles/>
+    <RouterProvider router={router} />  
+  </>
+  
+}
