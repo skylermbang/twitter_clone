@@ -68,3 +68,11 @@ function App() {
   </>
   
 }
+
+using outlet component, you can combine different compoentn together in the page
+
+
+
+-Firebase SDK 
+firebase fetches the user detail for the authenticating 
+grab cookie nad 
