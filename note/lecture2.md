@@ -76,3 +76,9 @@ using outlet component, you can combine different compoentn together in the page
 -Firebase SDK 
 firebase fetches the user detail for the authenticating 
 grab cookie nad 
+
+go to firebase add project 
+-install firebase by npm and 
+- initliazing the firebase 
+
+enable servicer from firebase console and also from our app
