@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
     collection,
-    getDocs,
+    
     limit,
     onSnapshot,
     orderBy,
@@ -18,7 +19,7 @@ import {
     tweet: string;
     userId: string;
     username: string;
-    createdAt: number;
+    createdAt: number | undefined;  // Allowing undefined
   }
   
   const Wrapper = styled.div`
@@ -28,7 +29,7 @@ import {
   `;
   
   export default function Timeline() {
-    const [tweets, setTweet] = useState<ITweet[]>([]);
+    const [tweets, setTweets] = useState<ITweet[]>([]);
   
     useEffect(() => {
       let unsubscribe: Unsubscribe | null = null;
@@ -62,7 +63,7 @@ import {
               id: doc.id,
             };
           });
-          setTweet(tweets);
+          setTweets(tweets as any);
         });
       };
       fetchTweets();

@@ -85,10 +85,10 @@ export default function Profile() {
       // inspection page you can create index by clicking the errorlog
       const snapshot = await getDocs(tweetQuery);
       const tweets = snapshot.docs.map((doc) => {
-        const { tweet, createAt, userId, username, photo } = doc.data();
+        const { tweet, createdAt, userId, username, photo } = doc.data();
         return {
           tweet,
-          createAt,
+          createdAt,
           userId,
           username,
           photo,

@@ -1,7 +1,7 @@
 import { Link,Outlet } from "react-router-dom"
 import {styled} from "styled-components"
 import { auth } from "../firebase";
-import { Navigate , useNavigate} from "react-router-dom";
+import {  useNavigate} from "react-router-dom";
 
 const Wrapper = styled.div`
     display: grid;
