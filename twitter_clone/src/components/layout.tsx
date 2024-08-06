@@ -6,11 +6,11 @@ import {  useNavigate} from "react-router-dom";
 const Wrapper = styled.div`
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
     height: 100%;
     padding: 50px 0px;
     width: 100%;
-    max-width: 860px;
+    max-width: 950px;
 `;
 
 const Menu = styled.div`
